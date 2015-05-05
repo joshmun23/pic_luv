@@ -1,0 +1,63 @@
+$primary-color: black;
+$bg-color: white;
+
+
+.header {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2px;
+  padding-bottom: 0;
+  height: 7Vh;
+  text-align: center;
+  text-shadow: 1px 1px 1px;
+  letter-spacing: 2px;
+}
+
+.jumbotron {
+  height: 33Vh;
+  width: 100%;
+  background-color:rgba($primary-color,0.4);
+}
+
+.carousel-container ul {
+  display: inline-block;
+}
+
+.carousel-container li {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  list-style: none;
+}
+
+.carousel-item img {
+  margin-top: 1.5Vh;
+  width: 100%;
+  height: 30Vh;
+  opacity: .67;
+  vertical-align: middle;
+  border: 2px solid black;
+}
+
+.body {
+  margin-top: 5Vh;
+  height: 40Vh;
+  background-color:rgba($primary-color,0.4);
+}
+
+.body .featured-text {
+  height: 35Vh;
+  overflow-y: auto;
+  position: fixed;
+  margin-top: 2.5Vh;
+  width: 65%;
+  letter-spacing: 1px;
+  text-shadow: .1px .1px .1px $primary-color;
+}
+.body img {
+  width: 100%;
+  height: 35Vh;
+  margin-top: 2.5Vh;
+}
