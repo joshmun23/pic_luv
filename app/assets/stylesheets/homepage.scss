@@ -1,6 +1,6 @@
 $primary-color: black;
 $bg-color: white;
-
+$pink-opacity: rgba(red,0.3);
 
 .header {
   width: 100%;
@@ -12,12 +12,13 @@ $bg-color: white;
   text-align: center;
   text-shadow: 1px 1px 1px;
   letter-spacing: 2px;
+  background-color: $pink-opacity;
 }
 
 .jumbotron {
   height: 33Vh;
   width: 100%;
-  background-color:rgba($primary-color,0.4);
+  background-color:rgba($primary-color,0.5);
 }
 
 .carousel-container ul {
@@ -41,10 +42,17 @@ $bg-color: white;
   border: 2px solid black;
 }
 
+.buttons {
+  height: 5Vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $pink-opacity;
+}
+
 .body {
-  margin-top: 5Vh;
   height: 40Vh;
-  background-color:rgba($primary-color,0.4);
+  background-color:rgba($primary-color,0.6);
 }
 
 .body .featured-text {

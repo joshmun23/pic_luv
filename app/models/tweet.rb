@@ -24,11 +24,10 @@ class Tweet < ActiveRecord::Base
 
       results << result
       if results
-        break if results.size == 5
+        break if results.size == 3
       end
     end
 
-    binding.pry
     results
   end
 
@@ -39,8 +38,9 @@ class Tweet < ActiveRecord::Base
     result['user_id'] = object.user.id
     result['created_at'] = object.created_at
     result['photo_url'] = fetch_photo_urls(object)
+    result['text'] = object.text
 
-    result
+    result.to_json
   end
 
   def fetch_photo_urls(object)
@@ -51,7 +51,6 @@ class Tweet < ActiveRecord::Base
       url = JSON.parse(text.to_json)
       photo_urls << url['media_url']
     end
-    binding.pry
 
     photo_urls
   end

@@ -16,10 +16,12 @@
 
  */
 
-$primary-color: black;
-$bg-color: white;
+$bg-color: black;
+$primary-color: white;
+$pink-opacity: rgba(red,0.3);
 
 body {
+  background-color: $pink-opacity;
   color: $primary-color;
   font-weight: bold;
 }

@@ -1,7 +1,5 @@
 class HomesController < ApplicationController
   def index
-    if current_user
-      tweets = Tweet.new
-    end
+    @tweets = Tweet.first.mentions
   end
 end
