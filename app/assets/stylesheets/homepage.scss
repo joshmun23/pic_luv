@@ -1,5 +1,5 @@
-$primary-color: black;
-$bg-color: white;
+$primary-color: white;
+$bg-color: black;
 $pink-opacity: rgba(red,0.3);
 
 .header {
@@ -15,10 +15,14 @@ $pink-opacity: rgba(red,0.3);
   background-color: $pink-opacity;
 }
 
+.header h1 {
+  color: $primary-color;
+}
+
 .jumbotron {
   height: 33Vh;
   width: 100%;
-  background-color:rgba($primary-color,0.5);
+  background-color:rgba($primary-color,0.1);
 }
 
 .carousel-container ul {
@@ -37,7 +41,7 @@ $pink-opacity: rgba(red,0.3);
   margin-top: 1.5Vh;
   width: 100%;
   height: 30Vh;
-  opacity: .67;
+  opacity: 0.67;
   vertical-align: middle;
   border: 2px solid black;
 }
@@ -52,7 +56,7 @@ $pink-opacity: rgba(red,0.3);
 
 .body {
   height: 40Vh;
-  background-color:rgba($primary-color,0.6);
+  background-color:rgba($bg-color,0.25);
 }
 
 .body .featured-text {

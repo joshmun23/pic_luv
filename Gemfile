@@ -16,6 +16,7 @@ gem 'rails_12factor'
 gem 'nokogiri'
 
 group :development, :test do
+  gem 'quiet_assets'
   gem 'pry-rails'
   gem 'spring'
   gem 'rspec-rails'
