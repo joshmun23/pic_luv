@@ -7,7 +7,7 @@ class Luv < ActiveRecord::Base
 
   def get_nearby_users
     users = []
-    12.times do
+    1.times do
       users << connect_tinder.get_nearby_users
     end
 
