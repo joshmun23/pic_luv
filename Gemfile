@@ -14,6 +14,7 @@ gem 'foundation-rails'
 gem 'twitter'
 gem 'rails_12factor'
 gem 'nokogiri'
+gem 'tinder_pyro', '~> 0.0.1', require: 'pyro'
 
 group :development, :test do
   gem 'quiet_assets'
