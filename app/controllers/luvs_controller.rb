@@ -1,0 +1,2 @@
+class Luvs < ApplicationController
+end

@@ -1,9 +1,16 @@
 class Luv < ActiveRecord::Base
-  def index
-  end
-
   def connect_tinder
     pyro = TinderPyro::Client.new
-    pyro.sign_in(FACEBOOK_ID, FACEBOOK_TOKEN)
+    pyro.sign_in(ENV['FACEBOOK_ID'], ENV['FACEBOOK_TOKEN'])
+    pyro
+  end
+
+  def get_nearby_users
+    users = []
+    12.times do
+      users << connect_tinder.get_nearby_users
+    end
+
+    users
   end
 end
