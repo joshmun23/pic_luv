@@ -11,6 +11,13 @@ class Luv < ActiveRecord::Base
       users << connect_tinder.get_nearby_users
     end
 
+    create_profiles(users)
+
     users
+  end
+
+  def create_profiles(users)
+    users = users.map do |user|
+    end
   end
 end
