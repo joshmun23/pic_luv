@@ -16,26 +16,16 @@
 
  */
 
-$bg-color: black;
-$primary-color: white;
-$pink-opacity: rgba(red,0.3);
+$bg-color: #ffffff;
+$primary-color: #000000;
+/*$pink-opacity: rgba(red,0.3);*/
 
 body {
-  background-color: $pink-opacity;
+  background-color: $bg-color;
   color: $primary-color;
   font-weight: bold;
 }
 
-body::after {
-  content: "";
-  background: url('http://sunsetcliffsestate.squarespace.com/storage/bigstock-Sunset-Cliffs-Panorama-6571177.jpg?__SQUARESPACE_CACHEVERSION=1342634681449');
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: .4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+#top-bar {
+  background-color: $bg-color;
 }
