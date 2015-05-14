@@ -10,22 +10,30 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require foundation_and_overrides
  *= require_tree .
  *= require_self
- *= require foundation_and_overrides
 
  */
 
 $bg-color: #ffffff;
-$primary-color: #000000;
-/*$pink-opacity: rgba(red,0.3);*/
+$primary-color: rgba(#000,0.3);
+$pink-opacity: rgba(red,0.3);
 
 body {
   background-color: $bg-color;
   color: $primary-color;
   font-weight: bold;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #top-bar {
   background-color: $bg-color;
+  color: $primary-color;
+}
+
+#top-bar .right ul {
+  background-color: $bg-color;
+  border: red solid 1px;
 }
