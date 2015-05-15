@@ -7,6 +7,7 @@ $red-opacity: rgba(red,0.3);
 .jumbotron {
   margin-top: 2.8rem;
   border-top: $red-opacity solid 1px;
+  padding-top: 1.3rem;
 }
 
 .carousel-container {
@@ -56,7 +57,7 @@ $red-opacity: rgba(red,0.3);
 
 .featured-container section,
   .featured-container aside {
-  margin: 10px;
+  margin: 2rem;
 }
 
 .body .featured-section {
