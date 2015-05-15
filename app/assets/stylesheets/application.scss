@@ -18,22 +18,21 @@
 
 $bg-color: #ffffff;
 $primary-color: rgba(#000,0.3);
+$black: #000000;
 $pink-opacity: rgba(red,0.3);
 
 body {
   background-color: $bg-color;
   color: $primary-color;
   font-weight: bold;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 #top-bar {
-  background-color: $bg-color;
-  color: $primary-color;
+  background-color: $bg-color !important;
 }
 
-#top-bar .right ul {
-  background-color: $bg-color;
-  border: red solid 1px;
+.top-bar a:hover {
+  border-bottom: solid $black 1px;
 }

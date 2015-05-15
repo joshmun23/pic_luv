@@ -1,25 +1,11 @@
-$primary-color: rgba(#000,0.4);
+$red: #FF3333;
+/*$primary-color: rgba(#000,0.4);*/
+$primary-color: #FF3333;
 $bg-color: #ffffff;
-$pink-opacity: rgba(red,0.3);
-
-.header {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 2px;
-  padding-bottom: 0;
-  height: 7Vh;
-  text-align: center;
-  text-shadow: 1px 1px 1px;
-  letter-spacing: 3px;
-  background-color: $pink-opacity;
-}
-
-.header h1 {
-  color: $bg-color;
-}
+$red-opacity: rgba(red,0.3);
 
 .jumbotron {
+  border-top: $red-opacity solid 1px;
 }
 
 .carousel-container {
@@ -54,29 +40,37 @@ $pink-opacity: rgba(red,0.3);
 
 
 .buttons {
-  height: 5Vh;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: $pink-opacity;
+  border-bottom: $red-opacity solid 1px;
+  margin-bottom: 1rem;
 }
 
-.body {
+.featured-container {
   height: 40Vh;
-  background-color:rgba($bg-color,0.25);
+  width: 100%;
 }
 
-.body .featured-text {
+
+.featured-container section,
+  .featured-container aside {
+  margin: 10px;
+}
+
+.body .featured-section {
   height: 35Vh;
   overflow-y: auto;
   margin-top: 2.5Vh;
-  width: 65%;
   letter-spacing: 1px;
   text-shadow: .1px .1px .1px $primary-color;
 }
-.body img {
-  width: 100%;
-  height: 35Vh;
-  margin-top: 2.5Vh;
-}
 
+.featured-container img {
+  width: 95%;
+  height: auto;
+  margin: 0;
+  margin-left: 2.6%;
+  left: 50%;
+  margin-right: -50%;
+}
