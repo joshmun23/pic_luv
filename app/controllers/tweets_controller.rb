@@ -3,17 +3,8 @@ class TweetsController < ApplicationController
   end
 
   def new
-  end
+    @tweets = Tweet.first.mentions
 
-  def show
-  end
-
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
+    render json: @tweets
   end
 end
