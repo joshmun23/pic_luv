@@ -4,15 +4,17 @@
 
 <div class="small-12 large-12 columns jumbotron">
   <ul class="carousel-container">
-    <% @users.each_with_index do |user, index| %>
-      <% user['results'].each do |result| %>
-        <% result['photos'].each do |photo| %>
-          <li class="carousel-item small-2 large-2 columns" id=<%= index %>>
-            <img src=<%= photo['processedFiles'][1]['url'] %>></img>
-          </li>
+      <% @users.each_with_index do |user, index| %>
+    <% if user['results'] %>
+        <% user['results'].each do |result| %>
+          <% result['photos'].each do |photo| %>
+            <li class="carousel-item small-2 large-2 columns" id=<%= index %>>
+              <img src=<%= photo['processedFiles'][1]['url'] %>></img>
+            </li>
+          <% end %>
         <% end %>
-      <% end %>
     <% end %>
+      <% end %>
   </ul>
 </div>
 <div class="small-12 large-12 columns buttons">

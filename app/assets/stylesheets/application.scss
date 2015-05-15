@@ -18,6 +18,7 @@
 
 $bg-color: #ffffff;
 $primary-color: rgba(#000,0.3);
+$black: #000000;
 $pink-opacity: rgba(red,0.3);
 
 body {
@@ -32,6 +33,6 @@ body {
   background-color: $bg-color !important;
 }
 
-#top-bar .right {
-  border-radius: 10rem;
+.top-bar a:hover {
+  border-bottom: solid $black 1px;
 }

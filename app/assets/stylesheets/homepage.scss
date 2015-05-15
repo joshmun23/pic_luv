@@ -4,24 +4,8 @@ $primary-color: #FF3333;
 $bg-color: #ffffff;
 $red-opacity: rgba(red,0.3);
 
-.header {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 2px;
-  padding-bottom: 0;
-  height: 7Vh;
-  text-align: center;
-  text-shadow: 1px 1px 1px $primary-color;
-  letter-spacing: 3px;
-  border-bottom: $red-opacity solid 1px;
-}
-
-.header h1 {
-  color: $red;
-}
-
 .jumbotron {
+  border-top: $red-opacity solid 1px;
 }
 
 .carousel-container {
@@ -68,13 +52,13 @@ $red-opacity: rgba(red,0.3);
   width: 100%;
 }
 
+
 .featured-container section,
   .featured-container aside {
   margin: 10px;
-  border: $red-opacity solid 1px;
 }
 
-.body .featured-text {
+.body .featured-section {
   height: 35Vh;
   overflow-y: auto;
   margin-top: 2.5Vh;
@@ -82,11 +66,11 @@ $red-opacity: rgba(red,0.3);
   text-shadow: .1px .1px .1px $primary-color;
 }
 
-.body .featured-pic {
-  height: 35Vh;
+.featured-container img {
+  width: 95%;
+  height: auto;
+  margin: 0;
+  margin-left: 2.6%;
+  left: 50%;
+  margin-right: -50%;
 }
-.body img {
-  width: 100%;
-  margin-top: 2.5Vh;
-}
-
