@@ -29,15 +29,17 @@ $red-opacity: rgba(red,0.3);
 }
 
 .carousel-item img {
-  width: 100%;
+  width: 20Vw;
   height: 30Vh;
   opacity: 0.67;
   vertical-align: middle;
   padding: 0;
+  border-radius: 50%;
 }
 
 .carousel-item img:hover {
   opacity: 1;
+  border-radius: 10%;
 }
 
 
@@ -69,10 +71,12 @@ $red-opacity: rgba(red,0.3);
 }
 
 .featured-container img {
-  width: 95%;
-  height: auto;
+  width: 20Vw;
+  height: 30Vh;
   margin: 0;
   margin-left: 2.6%;
   left: 50%;
   margin-right: -50%;
+  border-radius: 10%;
+  border: solid $primary-color 0.25rem;
 }
