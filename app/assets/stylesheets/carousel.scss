@@ -40,7 +40,7 @@ $red-opacity: rgba(red,0.3);
   filter: grayscale(100%);
   filter: gray; /* IE 6-9 */
 
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .carousel-image-container:hover {
@@ -49,9 +49,8 @@ $red-opacity: rgba(red,0.3);
   -ms-filter: none;
   filter: none;
   transform:scale(1.05,1.05);
-  background-color: white;
 
-  -ms-transform: rotateX(120deg); /* IE 9 */
-  -webkit-transform: rotateX(120deg); /* Chrome, Safari, Opera */
-  transform: rotateX(120deg);
-}
+/*  -ms-transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+*/}
