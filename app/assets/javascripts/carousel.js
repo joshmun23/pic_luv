@@ -10,7 +10,7 @@ var $data = $.get('/tweets/new', function(response) {
   };
 });
 
-$('.carousel-container div').on('mouseenter click', '.carousel-item', function(e) {
+$('.carousel-container div').on('click', '.carousel-item', function(e) {
   e.preventDefault;
   currentPic = $(this).find('img');
   currentPicID = $(this).attr('id');
@@ -20,7 +20,7 @@ $('.carousel-container div').on('mouseenter click', '.carousel-item', function(e
   });
 });
 
-$('.carousel-container div').on('mouseleave click', '.carousel-item img', function(e) {
+$('.carousel-container div').on('click', '.carousel-item img', function(e) {
   e.preventDefault;
   $('#feature-pic-container img#img-' + currentPicID).delay(500).fadeOut(1000, function(){
     $('#feature-pic-container').removeClass('show');
