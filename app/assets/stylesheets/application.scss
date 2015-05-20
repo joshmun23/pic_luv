@@ -36,3 +36,11 @@ body {
 .top-bar a:hover {
   border-bottom: solid $black 1px;
 }
+
+.hidden {
+  visiblity: hidden;
+}
+
+.show {
+  visiblity: visible;
+}
