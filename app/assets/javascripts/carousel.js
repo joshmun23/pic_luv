@@ -14,7 +14,7 @@ $('.carousel-container div').on('mouseenter click', '.carousel-item', function(e
   e.preventDefault;
   currentPic = $(this).find('img');
   currentPicID = $(this).attr('id');
-  $('#feature-pic-container img#img-0').delay(500).fadeIn(1000, function(){
+  $('#feature-pic-container img#img-' + currentPicID).delay(500).fadeIn(1000, function(){
     $('#feature-pic-container').removeClass('hidden');
     $('#feature-pic-container').addClass('show');
   });
@@ -22,7 +22,7 @@ $('.carousel-container div').on('mouseenter click', '.carousel-item', function(e
 
 $('.carousel-container div').on('mouseleave click', '.carousel-item img', function(e) {
   e.preventDefault;
-  $('#feature-pic-container img#img-0').delay(500).fadeOut(1000, function(){
+  $('#feature-pic-container img#img-' + currentPicID).delay(500).fadeOut(1000, function(){
     $('#feature-pic-container').removeClass('show');
     $('#feature-pic-container').addClass('hidden');
   });
