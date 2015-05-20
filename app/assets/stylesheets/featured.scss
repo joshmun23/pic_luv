@@ -1,0 +1,34 @@
+$red: #FF3333;
+/*$primary-color: rgba(#000,0.4);*/
+$primary-color: #FF3333;
+$bg-color: #ffffff;
+$red-opacity: rgba(red,0.3);
+
+.featured-container {
+  height: 40Vh;
+  width: 100%;
+}
+
+.featured-container section,
+  .featured-container aside {
+  margin: 2rem;
+}
+
+.body .featured-section {
+  height: 35Vh;
+  overflow-y: auto;
+  margin-top: 2.5Vh;
+  letter-spacing: 1px;
+  text-shadow: .1px .1px .1px $primary-color;
+}
+
+.featured-container img {
+  width: 95%;
+  height: 30vh;
+  margin: 0;
+  margin-left: 0.75vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  left: 50%;
+  border-radius: 5%;
+}
