@@ -29,8 +29,10 @@ body {
   margin-right: 5vw;
 }
 
-#top-bar {
-  background-color: $bg-color !important;
+#top-bar-container {
+  border-bottom: solid $pink-opacity 1px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .top-bar a:hover {
