@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'foundation-rails', '= 5.5.1.0'
 gem 'twitter'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'nokogiri'
 gem 'tinder_pyro', '~> 0.0.1', require: 'pyro'
 

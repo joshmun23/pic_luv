@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :tweets, only: [:index, :new]
-  resources :luvs, only: [:index]
+  # resources :luvs, only: [:index]
 end
