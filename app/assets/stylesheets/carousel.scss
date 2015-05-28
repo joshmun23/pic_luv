@@ -43,14 +43,15 @@ $red-opacity: rgba(red,0.3);
   transition: all 1s ease;
 }
 
-.carousel-image-container:hover {
+.carousel-image-container img:hover {
   -webkit-filter: none;
   -moz-filter: none;
   -ms-filter: none;
   filter: none;
-/*  transform:scale(1.05,1.05);
 
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-*/}
+  opacity: 0.5;
+  transition-duration: 1.5s;
+}

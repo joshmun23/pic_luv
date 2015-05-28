@@ -33,3 +33,16 @@ $red-opacity: rgba(red,0.3);
   border-radius: 5%;
   display: none;
 }
+
+.featured-container .hidden {
+  visiblity: hidden;
+}
+
+.featured-container .show {
+  visiblity: visible;
+  -ms-transform: scale(1.05, 1.05); /* IE 9 */
+  -webkit-transform: scale(1.05, 1.05); /* Chrome, Safari, Opera */
+  transform: scale(1.05, 1.05);
+
+  transition-duration: 1s;
+}
