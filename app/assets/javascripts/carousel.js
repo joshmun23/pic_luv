@@ -12,7 +12,7 @@ var $data = $.get('/tweets/new', function(response) {
 
 $('.carousel-container').on('click', '.carousel-item', function(e) {
   e.preventDefault;
-  $('#feature-pic-container img').delay(100).slideUp(200, function(){
+  $('#feature-pic-container img').delay(100).fadeIn(200, function(){
     $('#feature-pic-container').removeClass('show');
     $('#feature-pic-container').addClass('hidden');
   });
@@ -20,7 +20,7 @@ $('.carousel-container').on('click', '.carousel-item', function(e) {
   currentPic = $(this).find('img');
   currentPicID = $(this).attr('id');
 
-  $('#feature-pic-container img#img-' + currentPicID).delay(400).slideDown(550, function(){
+  $('#feature-pic-container img#img-' + currentPicID).fadeOut(400).slideDown(550, function(){
     $('#feature-pic-container').removeClass('hidden');
     $('#feature-pic-container').addClass('show');
   });

@@ -23,13 +23,6 @@ $red-opacity: rgba(red,0.3);
 }
 
 .featured-container img {
-  width: 95%;
-  height: 30vh;
-  margin: 0;
-  margin-left: 0.75vw;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  left: 50%;
   border-radius: 5%;
   display: none;
 }
@@ -39,10 +32,16 @@ $red-opacity: rgba(red,0.3);
 }
 
 .featured-container .show {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   visiblity: visible;
+  width: 20vh;
+  height: 30vh;
   -ms-transform: scale(1.05, 1.05); /* IE 9 */
   -webkit-transform: scale(1.05, 1.05); /* Chrome, Safari, Opera */
   transform: scale(1.05, 1.05);
-
   transition-duration: 1s;
 }
