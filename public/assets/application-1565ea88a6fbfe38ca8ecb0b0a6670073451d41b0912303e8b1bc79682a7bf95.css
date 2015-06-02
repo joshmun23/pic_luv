@@ -6546,7 +6546,7 @@ meta.foundation-mq-topbar {
 /* line 118, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #333333;
+  background: #ffffff;
 }
 /* line 122, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .contain-to-grid .top-bar {
@@ -6586,7 +6586,7 @@ meta.foundation-mq-topbar {
   height: 2.8125rem;
   line-height: 2.8125rem;
   position: relative;
-  background: #333333;
+  background: #ffffff;
   margin-bottom: 0;
 }
 /* line 161, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -6644,7 +6644,7 @@ meta.foundation-mq-topbar {
 /* line 208, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
   font-weight: normal;
-  color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.5);
   width: 75%;
   display: block;
   padding: 0 0.9375rem;
@@ -6657,7 +6657,7 @@ meta.foundation-mq-topbar {
 }
 /* line 224, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar a {
-  color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: bold;
@@ -6703,7 +6703,7 @@ meta.foundation-mq-topbar {
 }
 /* line 274, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar.expanded .title-area {
-  background: #333333;
+  background: #ffffff;
 }
 /* line 277, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a {
@@ -6733,7 +6733,7 @@ meta.foundation-mq-topbar {
 /* line 306, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px #1a1a1a;
+  border-top: solid 1px gray;
   clear: both;
   height: 1px;
   width: 100%;
@@ -6746,7 +6746,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.5);
   padding: 12px 0 12px 0;
   padding-left: 0.9375rem;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -6903,8 +6903,8 @@ meta.foundation-mq-topbar {
 /* line 352, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section ul li:hover:not(.has-form) > a {
   background-color: #555555;
-  background: #333333;
-  color: #FFFFFF;
+  background: #ffffff;
+  color: #000000;
 }
 /* line 361, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a {
@@ -6994,7 +6994,7 @@ meta.foundation-mq-topbar {
 }
 /* line 428, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-  color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.5);
   display: block;
 }
 /* line 432, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -7027,7 +7027,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.063em) {
   /* line 455, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #333333;
+    background: #ffffff;
     overflow: visible;
   }
   /* line 172, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_global.scss */
@@ -7062,7 +7062,7 @@ meta.foundation-mq-topbar {
   }
   /* line 474, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar.expanded {
-    background: #333333;
+    background: #ffffff;
   }
 
   /* line 477, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
@@ -7094,19 +7094,19 @@ meta.foundation-mq-topbar {
   /* line 500, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li.hover > a:not(.button) {
     background-color: #555555;
-    background: #333333;
-    color: #FFFFFF;
+    background: #ffffff;
+    color: #000000;
   }
   /* line 509, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 0.9375rem;
     line-height: 2.8125rem;
-    background: #333333;
+    background: #ffffff;
   }
   /* line 513, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #555555;
-    background: #333333;
+    background: #ffffff;
   }
   /* line 522, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -7200,7 +7200,7 @@ meta.foundation-mq-topbar {
   }
   /* line 599, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
-    color: #FFFFFF;
+    color: #000000;
     background-color: #555555;
     background: #333333;
   }
@@ -7218,14 +7218,14 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #4e4e4e;
+    border-right: solid 1px white;
     clear: none;
     height: 2.8125rem;
     width: 0;
   }
   /* line 631, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
-    background: #333333;
+    background: #ffffff;
     padding: 0 0.9375rem;
     height: 2.8125rem;
   }
@@ -7251,8 +7251,8 @@ meta.foundation-mq-topbar {
   /* line 661, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: #333333;
-    color: #FFFFFF;
+    background: #ffffff;
+    color: #000000;
   }
   /* line 670, /Users/joshmun23/.gem/ruby/2.1.5/gems/foundation-rails-5.5.1.0/vendor/assets/stylesheets/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
@@ -9042,86 +9042,6 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 5, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.header {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 2px;
-  padding-bottom: 0;
-  height: 7Vh;
-  text-align: center;
-  text-shadow: 1px 1px 1px;
-  letter-spacing: 3px;
-  background-color: rgba(255, 0, 0, 0.3);
-}
-
-/* line 18, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.header h1 {
-  color: #ffffff;
-}
-
-/* line 25, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.carousel-container {
-  height: 33Vh;
-  width: 100%;
-  margin-top: 1.5Vh;
-}
-
-/* line 31, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.carousel-container ul {
-  display: inline-block;
-}
-
-/* line 35, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.carousel-container li {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  list-style: none;
-}
-
-/* line 43, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.carousel-item img {
-  width: 100%;
-  height: 30Vh;
-  opacity: 0.67;
-  vertical-align: middle;
-  padding: 0;
-}
-
-/* line 51, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.buttons {
-  height: 5Vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(255, 0, 0, 0.3);
-}
-
-/* line 59, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.body {
-  height: 40Vh;
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-/* line 64, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.body .featured-text {
-  height: 35Vh;
-  overflow-y: auto;
-  margin-top: 2.5Vh;
-  width: 65%;
-  letter-spacing: 1px;
-  text-shadow: 0.1px 0.1px 0.1px rgba(0, 0, 0, 0.4);
-}
-
-/* line 72, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/homepage.scss */
-.body img {
-  width: 100%;
-  height: 35Vh;
-  margin-top: 2.5Vh;
-}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -9139,17 +9059,133 @@ th.hide-for-touch {
 
 
  */
-/* line 24, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+/* line 25, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
 body {
   background-color: #ffffff;
   color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
-/* line 32, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
-#top-bar {
-  background-color: #ffffff;
-  color: rgba(0, 0, 0, 0.3);
+/* line 31, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+#top-bar-container {
+  border-bottom: solid rgba(255, 0, 0, 0.3) 1px;
+}
+
+/* line 35, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+.top-bar a:hover {
+  border-bottom: solid #000000 1px;
+}
+
+/* line 39, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+.hidden {
+  visiblity: hidden;
+}
+
+/* line 43, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+.show {
+  visiblity: visible;
+}
+/*$primary-color: rgba(#000,0.4);*/
+/* line 7, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/buttons.scss */
+.buttons {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: rgba(255, 0, 0, 0.3) solid 1px;
+  margin-bottom: 1rem;
+}
+/*$primary-color: rgba(#000,0.4);*/
+/* line 7, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+.carousel-container li {
+  list-style: none;
+}
+
+/* line 11, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+.carousel-item img {
+  max-width: auto;
+  height: 50vh;
+  opacity: 0.67;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 0;
+  border-radius: 50%;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE 6-9 */
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transition: all 1s ease;
+}
+
+/* line 35, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+.carousel-image-container img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+  -ms-transform: rotateY(360deg) scale(1.05, 1.05);
+  -webkit-transform: rotateY(360deg) scale(1.05, 1.05);
+  transform: rotateY(360deg) scale(1.05, 1.05);
+  transition-duration: 1s;
+}
+/*$primary-color: rgba(#000,0.4);*/
+/* line 7, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+.featured-container {
+  width: 100%;
+}
+
+/* line 11, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+.featured-section {
+  margin-top: 2.5Vh;
+  letter-spacing: 1px;
+  text-shadow: 0.1px 0.1px 0.1px #FF3333;
+}
+
+/* line 17, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+.featured-container img {
+  border-radius: 5%;
+  display: none;
+}
+
+/* line 22, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+.featured-container .hidden {
+  visiblity: hidden;
+}
+
+/* line 26, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+.feature-pic-container img.show {
+  max-width: 100%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  -ms-transform: scale(1.05, 1.05);
+  /* IE 9 */
+  -webkit-transform: scale(1.05, 1.05);
+  /* Chrome, Safari, Opera */
+  transform: scale(1.05, 1.05);
+  transition-duration: 1s;
+}
+/* line 37, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+.feature-pic-container img.show #img-0 {
+  padding-left: 20%;
+}
+/*$primary-color: rgba(#000,0.4);*/
+/*$primary-color: rgba(#000,0.4);*/
+/* line 7, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/jumbotron.scss */
+.jumbotron {
+  margin-top: 2.8rem;
+  border-top: rgba(255, 0, 0, 0.3) solid 1px;
+  padding-top: 1.3rem;
+  height: 75vh;
+  width: 100%;
 }

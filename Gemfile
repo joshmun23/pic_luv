@@ -12,7 +12,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'foundation-rails', '= 5.5.1.0'
 gem 'twitter'
-gem 'rails_12factor', group: :production
 gem 'nokogiri'
 gem 'tinder_pyro', '~> 0.0.1', require: 'pyro'
 
@@ -27,4 +26,9 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'shoulda-matchers', require: false
   gem 'dotenv-rails'
+end
+
+group :production do
+  gem "rails_12factor"
+  gem "rails_serve_static_assets"
 end

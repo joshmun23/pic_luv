@@ -16792,11 +16792,134 @@ return jQuery;
 
 
 
-$('.carousel-container').on('click', '.carousel-item', function() {
+var $data = $.get('/tweets/new', function(response) {
+  for (i = 0; i < response.length; i++){
+    currentSelector = '.carousel-container #' + i;
+    tweets = $.parseJSON(response[i]);
+    imgURL = tweets.photo_url[0];
+
+    $(currentSelector).append('<li><img src=' + imgURL + '></li>');
+
+    $('.feature-pic-container').append('<img class="hidden" id=img-' + i + ' src=' + imgURL + '>');
+  };
+});
+
+$('.carousel-container').on('click', '.carousel-item', function(e) {
+  e.preventDefault;
   currentPic = $(this).find('img');
   currentPicID = $(this).attr('id');
-  $('#feature-pic-container').html(currentPic).fadeIn('slow');
+
+  $('.hidden .show').fadeOut(400);
+  $('.hidden .show').removeClass('show');
+
+  // $('#feature-pic-container img' + currentPicID).fadeOut(400, function(){
+    // $('#feature-pic-container').removeClass('hidden');
+    // $('#feature-pic-container').addClass('show');
+  // });
+
+  $('.feature-pic-container img#img-' + currentPicID).delay(400).fadeToggle(800, function(){
+    $('.feature-pic-container img#img-' + currentPicID).addClass('show');
+  });
+
 });
+
+function fadeCurrentPhoto(e) {
+  $('.show').removeClass('show');
+  debugger;
+};
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '492709227550036',
+    xfbml      : true,
+    version    : 'v2.3'
+  });
+};
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+// This is called with the results from from FB.getLoginStatus().
+function statusChangeCallback(response) {
+  console.log('statusChangeCallback');
+  console.log(response);
+  // The response object is returned with a status field that lets the
+  // app know the current login status of the person.
+  // Full docs on the response object can be found in the documentation
+  // for FB.getLoginStatus().
+  if (response.status === 'connected') {
+    // Logged into your app and Facebook.
+    testAPI();
+  } else if (response.status === 'not_authorized') {
+    // The person is logged into Facebook, but not your app.
+    document.getElementById('status').innerHTML = 'Please log ' +
+      'into this app.';
+  } else {
+    // The person is not logged into Facebook, so we're not sure if
+    // they are logged into this app or not.
+    document.getElementById('status').innerHTML = 'Please log ' +
+      'into Facebook.';
+  }
+}
+
+// This function is called when someone finishes with the Login
+// Button.  See the onlogin handler attached to it in the sample
+// code below.
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '492709227550036',
+    cookie     : true,  // enable cookies to allow the server to access
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+};
+
+// Load the SDK asynchronously
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+// Here we run a very simple test of the Graph API after login is
+// successful.  See statusChangeCallback() for when this call is made.
+function testAPI() {
+  console.log('Welcome!  Fetching your information.... ');
+  FB.api('/me', function(response) {
+    console.log('Successful login for: ' + response.name);
+    document.getElementById('status').innerHTML =
+      'Thanks for logging in, ' + response.name + '!';
+  });
+};
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
