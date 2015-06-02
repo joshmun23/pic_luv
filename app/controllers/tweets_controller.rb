@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
   end
 
   def new
-    @tweets = Tweet.first.mentions
+    @tweets = Tweet.new.mentions
 
     render json: @tweets
   end
