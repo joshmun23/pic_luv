@@ -5,18 +5,10 @@ $bg-color: #ffffff;
 $red-opacity: rgba(red,0.3);
 
 .featured-container {
-  height: 40Vh;
   width: 100%;
 }
 
-.featured-container section,
-  .featured-container aside {
-  margin: 2rem;
-}
-
-.body .featured-section {
-  height: 35Vh;
-  overflow-y: auto;
+.featured-section {
   margin-top: 2.5Vh;
   letter-spacing: 1px;
   text-shadow: .1px .1px .1px $primary-color;
@@ -31,17 +23,18 @@ $red-opacity: rgba(red,0.3);
   visiblity: hidden;
 }
 
-.featured-container .show {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+.feature-pic-container img.show {
+  max-width: 100%;
+  height: 50vh;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  visiblity: visible;
-  width: 20vh;
-  height: 30vh;
+  display: flex;
+
   -ms-transform: scale(1.05, 1.05); /* IE 9 */
   -webkit-transform: scale(1.05, 1.05); /* Chrome, Safari, Opera */
   transform: scale(1.05, 1.05);
   transition-duration: 1s;
+  #img-0{
+    padding-left: 20%;
+  }
 }

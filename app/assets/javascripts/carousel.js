@@ -6,22 +6,30 @@ var $data = $.get('/tweets/new', function(response) {
 
     $(currentSelector).append('<li><img src=' + imgURL + '></li>');
 
-    $('#feature-pic-container').append('<img class=hidden id=img-' + i + ' src=' + imgURL + '>');
+    $('.feature-pic-container').append('<img class="hidden" id=img-' + i + ' src=' + imgURL + '>');
   };
 });
 
 $('.carousel-container').on('click', '.carousel-item', function(e) {
   e.preventDefault;
-  $('#feature-pic-container img').delay(100).fadeIn(200, function(){
-    $('#feature-pic-container').removeClass('show');
-    $('#feature-pic-container').addClass('hidden');
-  });
-
   currentPic = $(this).find('img');
   currentPicID = $(this).attr('id');
 
-  $('#feature-pic-container img#img-' + currentPicID).fadeOut(400).slideDown(550, function(){
-    $('#feature-pic-container').removeClass('hidden');
-    $('#feature-pic-container').addClass('show');
+  $('.hidden .show').fadeOut(400);
+  $('.hidden .show').removeClass('show');
+
+  // $('#feature-pic-container img' + currentPicID).fadeOut(400, function(){
+    // $('#feature-pic-container').removeClass('hidden');
+    // $('#feature-pic-container').addClass('show');
+  // });
+
+  $('.feature-pic-container img#img-' + currentPicID).delay(400).fadeToggle(800, function(){
+    $('.feature-pic-container img#img-' + currentPicID).addClass('show');
   });
+
 });
+
+function fadeCurrentPhoto(e) {
+  $('.show').removeClass('show');
+  debugger;
+};
