@@ -9152,25 +9152,25 @@ body {
   left: 0;
   right: 0;
   margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
   margin-bottom: 10rem;
 }
 
-/* line 19, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+/* line 16, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .featured-section {
   margin-top: 2.5Vh;
   letter-spacing: 1px;
   text-shadow: 0.1px 0.1px 0.1px #FF3333;
 }
 
-/* line 25, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+/* line 22, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .featured-container img {
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5%;
-  max-width: 80%;
   height: 30vh;
+  width: auto;
   display: none;
+  text-align: center;
 }
 
 /* line 32, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
@@ -9180,10 +9180,8 @@ body {
 }
 
 /* line 37, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
-.feature-pic-container img.show, .feature-tweet-container fieldset.show {
-  max-width: 80%;
-  height: auto;
-  position: relative;
+.feature-pic-container {
+  text-align: center;
 }
 /* line 1, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/footer.scss */
 .footer {
