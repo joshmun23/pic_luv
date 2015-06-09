@@ -18,7 +18,7 @@
         <ul class="right">
           <%- if current_user -%>
             <li class="name">
-              <a href="/luvs">Luv</a>
+              <a href="#jump_to1">Skip</a>
             </li>
 
             <li class="name"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
@@ -37,24 +37,27 @@
     </div>
   <%- end -%>
 
-  <div id="content-container fixed">
+  <div id="content-container">
     <%= yield %>
   </div>
 
-<div id="fb-root" class="small-12 medium-12 large-12 columns">
-  <div
-    class="fb-like"
-    data-share="true"
-    data-width="450"
-    data-show-faces="true">
+  <div class="footer">
+    <div id="fb-root" class="small-12 medium-12 large-12 columns">
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
+
+      <div id="status">
+      </div>
+    </div>
   </div>
 
-  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-  </fb:login-button>
-
-  <div id="status">
-  </div>
-</div>
 
   <%= javascript_include_tag 'application' %>
   <%= yield :extra_footer %>

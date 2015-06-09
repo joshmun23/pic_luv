@@ -5,7 +5,15 @@ $bg-color: #ffffff;
 $red-opacity: rgba(red,0.3);
 
 .featured-container {
+  height: 50vh;
   width: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 5rem;
 }
 
 .featured-section {
@@ -16,17 +24,19 @@ $red-opacity: rgba(red,0.3);
 
 .featured-container img {
   border-radius: 5%;
+  max-width: 80%;
+  height: auto;
   display: none;
 }
 
 .featured-container .hidden {
   visiblity: hidden;
+  display: none;
 }
 
-.feature-pic-container img.show {
-  max-width: 100%;
-  height: 50vh;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+.feature-pic-container img.show, .feature-tweet-container fieldset.show {
+  max-width: 80%;
+  height: auto;
+  position: relative;
 }
+

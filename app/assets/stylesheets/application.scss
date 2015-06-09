@@ -24,7 +24,8 @@ $pink-opacity: rgba(red,0.3);
 body {
   background-color: $bg-color;
   color: $primary-color;
-  font-weight: bold;
+  letter-spacing: 0.5rem;
+  margin-bottom: 5rem;
 }
 
 #top-bar-container {

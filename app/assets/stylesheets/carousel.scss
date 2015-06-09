@@ -4,16 +4,21 @@ $primary-color: #FF3333;
 $bg-color: #ffffff;
 $red-opacity: rgba(red,0.3);
 
+.carousel-container {
+  height: 50vh;
+  overflow: auto;
+}
+
 .carousel-container li {
   list-style: none;
 }
 
 .carousel-item img {
-  max-width: auto;
-  height: 50vh;
+  max-width: 70%;
+  height: 30vh;
   opacity: 0.67;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;
