@@ -16,15 +16,14 @@ $red-opacity: rgba(red,0.3);
 .featured-section {
   margin-top: 2.5Vh;
   letter-spacing: 1px;
-  text-shadow: .1px .1px .1px $primary-color;
 }
 
 .featured-container img {
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5%;
   height: 30vh;
   width: auto;
+  border-radius: 5%;
   display: none;
   text-align: center;
 }
