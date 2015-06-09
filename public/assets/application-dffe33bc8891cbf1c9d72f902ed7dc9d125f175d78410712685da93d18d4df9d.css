@@ -9100,14 +9100,15 @@ body {
 .carousel-container {
   height: 50vh;
   overflow: auto;
+  border-bottom: rgba(255, 0, 0, 0.3) solid 1px;
 }
 
-/* line 12, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+/* line 13, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
 .carousel-container li {
   list-style: none;
 }
 
-/* line 16, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+/* line 17, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
 .carousel-item img {
   max-width: 70%;
   height: 30vh;
@@ -9133,7 +9134,7 @@ body {
   transition: all 1s ease;
 }
 
-/* line 40, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+/* line 41, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
 .carousel-image-container img:hover {
   -webkit-filter: none;
   -moz-filter: none;
@@ -9159,27 +9160,26 @@ body {
 .featured-section {
   margin-top: 2.5Vh;
   letter-spacing: 1px;
-  text-shadow: 0.1px 0.1px 0.1px #FF3333;
 }
 
-/* line 22, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+/* line 21, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .featured-container img {
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5%;
   height: 30vh;
   width: auto;
+  border-radius: 5%;
   display: none;
   text-align: center;
 }
 
-/* line 32, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+/* line 31, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .featured-container .hidden {
   visiblity: hidden;
   display: none;
 }
 
-/* line 37, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+/* line 36, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .feature-pic-container {
   text-align: center;
 }
