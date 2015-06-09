@@ -4,7 +4,6 @@ var $data = $.get('/tweets/new', function(response) {
     currentSelector = '.carousel-container #' + i;
     tweets = $.parseJSON(response[i]);
     var imgURL = tweets.photo_url[0];
-    debugger;
 
     $(currentSelector).append('<li><img src=' + imgURL + '></li>');
 

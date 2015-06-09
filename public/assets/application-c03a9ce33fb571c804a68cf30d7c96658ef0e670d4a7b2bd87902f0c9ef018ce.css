@@ -9063,25 +9063,26 @@ th.hide-for-touch {
 body {
   background-color: #ffffff;
   color: rgba(0, 0, 0, 0.3);
-  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 5rem;
 }
 
-/* line 31, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+/* line 32, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
 #top-bar-container {
   border-bottom: solid rgba(255, 0, 0, 0.3) 1px;
 }
 
-/* line 35, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+/* line 36, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
 .top-bar a:hover {
   border-bottom: solid #000000 1px;
 }
 
-/* line 39, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+/* line 40, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
 .hidden {
   visiblity: hidden;
 }
 
-/* line 43, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
+/* line 44, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/application.scss */
 .show {
   visiblity: visible;
 }
@@ -9092,21 +9093,27 @@ body {
   margin: 0;
   padding: 0;
   border-bottom: rgba(255, 0, 0, 0.3) solid 1px;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 /*$primary-color: rgba(#000,0.4);*/
 /* line 7, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+.carousel-container {
+  height: 50vh;
+  overflow: auto;
+}
+
+/* line 12, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
 .carousel-container li {
   list-style: none;
 }
 
-/* line 11, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+/* line 16, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
 .carousel-item img {
-  max-width: auto;
-  height: 50vh;
+  max-width: 70%;
+  height: 30vh;
   opacity: 0.67;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -9126,7 +9133,7 @@ body {
   transition: all 1s ease;
 }
 
-/* line 35, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
+/* line 40, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/carousel.scss */
 .carousel-image-container img:hover {
   -webkit-filter: none;
   -moz-filter: none;
@@ -9140,44 +9147,52 @@ body {
 /*$primary-color: rgba(#000,0.4);*/
 /* line 7, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .featured-container {
+  height: 50vh;
   width: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 10rem;
 }
 
-/* line 11, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+/* line 19, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .featured-section {
   margin-top: 2.5Vh;
   letter-spacing: 1px;
   text-shadow: 0.1px 0.1px 0.1px #FF3333;
 }
 
-/* line 17, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+/* line 25, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .featured-container img {
   border-radius: 5%;
+  max-width: 80%;
+  height: 30vh;
   display: none;
 }
 
-/* line 22, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
+/* line 32, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
 .featured-container .hidden {
   visiblity: hidden;
+  display: none;
 }
 
-/* line 26, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
-.feature-pic-container img.show {
-  max-width: 100%;
-  height: 50vh;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  -ms-transform: scale(1.05, 1.05);
-  /* IE 9 */
-  -webkit-transform: scale(1.05, 1.05);
-  /* Chrome, Safari, Opera */
-  transform: scale(1.05, 1.05);
-  transition-duration: 1s;
-}
 /* line 37, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/featured.scss */
-.feature-pic-container img.show #img-0 {
-  padding-left: 20%;
+.feature-pic-container img.show, .feature-tweet-container fieldset.show {
+  max-width: 80%;
+  height: auto;
+  position: relative;
+}
+/* line 1, /Users/joshmun23/side_projects/pic_luv/app/assets/stylesheets/footer.scss */
+.footer {
+  bottom: 0;
+  position: fixed;
+  height: 3rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: rgba(255, 0, 0, 0.4) solid 0.2rem;
 }
 /*$primary-color: rgba(#000,0.4);*/
 /*$primary-color: rgba(#000,0.4);*/
@@ -9186,6 +9201,6 @@ body {
   margin-top: 2.8rem;
   border-top: rgba(255, 0, 0, 0.3) solid 1px;
   padding-top: 1.3rem;
-  height: 75vh;
+  height: 50vh;
   width: 100%;
 }
