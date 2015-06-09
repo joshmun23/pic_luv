@@ -10,9 +10,6 @@ $red-opacity: rgba(red,0.3);
   left: 0;
   right: 0;
   margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
   margin-bottom: 10rem;
 }
 
@@ -23,13 +20,20 @@ $red-opacity: rgba(red,0.3);
 }
 
 .featured-container img {
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5%;
-  max-width: 80%;
   height: 30vh;
+  width: auto;
   display: none;
+  text-align: center;
 }
 
 .featured-container .hidden {
   visiblity: hidden;
   display: none;
+}
+
+.feature-pic-container {
+  text-align: center;
 }
